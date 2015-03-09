@@ -1,0 +1,33 @@
+footer {
+  border-top: 1px solid #e1e1e1;
+  @include user-select(none);
+
+  nav {
+    @include clearfix;
+
+    ul {
+      float: left;
+      font-size: 0;
+
+      li {
+        display: inline-block;
+        margin-right: 25px;
+        line-height: 100px;
+        a {
+          text-transform: capitalize;
+          text-decoration: none;
+          @include select-font(normal, lighter, 14px, '"Open Sans"  sans-serif', #8a8a8a);
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    p {
+      float: right;
+      line-height: 100px;
+      @include select-font(normal, lighter, 14px, '"Open Sans"  sans-serif', #8a8a8a);
+    }
+  }
+}

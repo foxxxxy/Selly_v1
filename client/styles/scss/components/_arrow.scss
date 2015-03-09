@@ -1,0 +1,52 @@
+.arrow {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  @include border-radius(50%);
+  background-color: transparent;
+  border: 2px solid #16a085;
+
+
+
+  &.launch {
+    width: 45px;
+    height: 45px;
+    border: 2px solid #fff;
+
+    &::after, &::before {
+      background: #fff;
+    }
+
+    &:hover {
+      background-color: rgba(0, 0, 0, .5);
+    }
+  }
+
+  &::after, &::before {
+    position: absolute;
+    top: 7.5%;
+    right: 1px;
+    bottom: 0;
+    left: -15%;
+    z-index: -1;
+    margin: auto;
+    content: "";
+    width: 33%;
+    height: 8%;
+    background: #16a085;
+    @include border-radius(5px);
+    @include rotate(45deg);
+  }
+
+  &::before {
+    left: 21%;
+    @include rotate(315deg);
+  }
+
+  &:hover {
+    background-color: rgba(208, 214, 217, .4);
+  }
+}

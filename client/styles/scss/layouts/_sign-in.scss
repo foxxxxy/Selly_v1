@@ -1,0 +1,48 @@
+.sign-in {
+  position: relative;
+  width: 100%;
+  border-bottom: 5px solid #16a085;
+  background-color: #2c3e50;
+  font-size: 0;
+  @include user-select(none);
+
+  .content-wrapper {
+    z-index: 2;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      right: -100%;
+      bottom: 0;
+      left: -100%;
+      z-index: -1;
+      border-bottom: 5px solid #16a085;
+      background-color: #2c3e50;
+      content: '';
+      height: 100%;
+    }
+
+    & > h3 {
+      padding-top: 115px;
+      color: #fff;
+    }
+
+    & > p {
+      font-size: 18px;
+      line-height: 42px;
+      color: #fff;
+    }
+
+    form {
+      margin: 65px 0 100px;
+
+      .button {
+        width: 204px;
+        height: 73px;
+        @include border-radius(0);
+        @include border-top-right-radius(5px);
+        @include border-bottom-right-radius(5px);
+      }
+    }
+  }
+}

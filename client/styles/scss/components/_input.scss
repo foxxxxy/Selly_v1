@@ -1,0 +1,15 @@
+input {
+  height: 71px;
+  width: 488px;
+  border: none;
+  background: {
+    position: 21px;
+    image: url("../../images/sign-in/mail.png");
+    repeat: no-repeat;
+  }
+;
+  padding-left: 74px;
+
+  @include border-top-left-radius(5px);
+  @include border-bottom-left-radius(5px);
+}

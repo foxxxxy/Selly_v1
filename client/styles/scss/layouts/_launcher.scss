@@ -1,0 +1,47 @@
+.launcher {
+  display: inline-block;
+  width: 100%;
+  height: 875px;
+  background: {
+    position: center;
+
+    //для проверки наличия тени
+//    color: #3a3a3a;
+    image: url("../../images/launcher/launcher.jpg");
+    repeat: no-repeat;
+  }
+  border-bottom: 5px solid #16a085;
+  text-align: center;
+  @include background-size(cover);
+  @include user-select(none);
+
+  .logo {
+    position: relative;
+    width: 256px;
+    height: 117px;
+    z-index: 1;
+    margin: auto;
+    padding: 120px 0 90px;
+
+    &::after {
+      position: absolute;
+      top: 120px;
+      right: -5px;
+      z-index: -1;
+      display: block;
+      content: url("../../images/launcher/shadow.png");
+    }
+  }
+
+  .cta-button {
+    margin: 110px;
+  }
+
+  .button {
+    line-height: 72px;
+
+    &:first-child {
+      margin-right: 30px;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.capability {
+  margin: 200px 0;
+  @include user-select(none);
+
+
+  & > h3 {
+    font-size: 33px;
+    padding-bottom: 50px;
+  }
+
+  .features {
+    padding-left: 20px;
+    font-size: 0;
+
+    figure {
+      margin-right: 53px;
+      display: inline-block;
+      width: 240px;
+
+      img {
+        padding: 13px;
+        border: 1px solid #e1e1e1;
+      }
+
+      figcaption {
+        h3 {
+          padding: 40px 0 0;
+          font-size: 24px;
+        }
+        p {
+          @include select-font(italic, normal, 14px, 'Georgia  sans-serif', #8a8a8a);
+          line-height: 24px;
+        }
+      }
+    }
+    a {
+      margin-top: 20px;
+    }
+  }
+}

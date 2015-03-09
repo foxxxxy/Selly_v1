@@ -1,0 +1,773 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700,300,400);
+/* line 17, ../../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 3, ../scss/_base.scss */
+* {
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 18px;
+  font-family: '"Open Sans" sans-serif';
+  color: #363636;
+}
+
+/* line 7, ../scss/_base.scss */
+body {
+  position: relative;
+}
+/* line 10, ../scss/_base.scss */
+body .content-wrapper {
+  text-align: center;
+}
+/* line 13, ../scss/_base.scss */
+body .content-wrapper .content {
+  display: inline-block;
+  font-size: 0;
+  text-align: center;
+}
+/* line 18, ../scss/_base.scss */
+body .content-wrapper .content .content-block {
+  width: 900px;
+  margin: 0 auto;
+  background-color: #fff;
+  font-size: 14px;
+}
+/* line 26, ../scss/_base.scss */
+body .push {
+  float: right;
+  width: 0;
+  height: 100%;
+  min-height: 1px;
+  vertical-align: top;
+  -webkit-transition-property: width;
+  -moz-transition-property: width;
+  -o-transition-property: width;
+  transition-property: width;
+  -webkit-transition-duration: 400ms;
+  -moz-transition-duration: 400ms;
+  -o-transition-duration: 400ms;
+  transition-duration: 400ms;
+}
+/* line 35, ../scss/_base.scss */
+body .push.show {
+  width: 190px;
+}
+/* line 40, ../scss/_base.scss */
+body h1 {
+  line-height: 58px;
+}
+/* line 44, ../scss/_base.scss */
+body h2 {
+  line-height: 32px;
+}
+/* line 48, ../scss/_base.scss */
+body h3 {
+  line-height: 42px;
+  text-transform: uppercase;
+}
+/* line 53, ../scss/_base.scss */
+body h5 {
+  line-height: 42px;
+}
+/* line 57, ../scss/_base.scss */
+body p {
+  line-height: 28px;
+}
+
+/* line 1, ../scss/components/_arrow.scss */
+.arrow {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid #16a085;
+}
+/* line 14, ../scss/components/_arrow.scss */
+.arrow.launch {
+  width: 45px;
+  height: 45px;
+  border: 2px solid #fff;
+}
+/* line 19, ../scss/components/_arrow.scss */
+.arrow.launch::after, .arrow.launch::before {
+  background: #fff;
+}
+/* line 23, ../scss/components/_arrow.scss */
+.arrow.launch:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* line 28, ../scss/components/_arrow.scss */
+.arrow::after, .arrow::before {
+  position: absolute;
+  top: 7.5%;
+  right: 1px;
+  bottom: 0;
+  left: -15%;
+  z-index: -1;
+  margin: auto;
+  content: "";
+  width: 33%;
+  height: 8%;
+  background: #16a085;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* line 44, ../scss/components/_arrow.scss */
+.arrow::before {
+  left: 21%;
+  -webkit-transform: rotate(315deg);
+  -moz-transform: rotate(315deg);
+  -ms-transform: rotate(315deg);
+  -o-transform: rotate(315deg);
+  transform: rotate(315deg);
+}
+/* line 49, ../scss/components/_arrow.scss */
+.arrow:hover {
+  background-color: rgba(208, 214, 217, 0.4);
+}
+
+/* line 1, ../scss/components/_button.scss */
+.button {
+  display: inline-block;
+  width: 230px;
+  height: 72px;
+  background-color: #16a085;
+  border: solid 3px transparent;
+  border-bottom-color: #3bd4b6;
+  font: 16px "Open Sans", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 14, ../scss/components/_button.scss */
+.button:hover {
+  background-color: #19b596;
+}
+/* line 18, ../scss/components/_button.scss */
+.button.video {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: solid 2px #fff;
+}
+/* line 22, ../scss/components/_button.scss */
+.button.video:hover {
+  background-color: #141d25;
+}
+
+/* line 1, ../scss/components/_heading.scss */
+h1 {
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 48px;
+  font-family: '"Open Sans"  sans-serif';
+  color: white;
+}
+/* line 4, ../scss/components/_heading.scss */
+h1 span {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  font-family: '"Open Sans"  sans-serif';
+  color: white;
+}
+
+/* line 9, ../scss/components/_heading.scss */
+h2 {
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 18px;
+  font-family: '"Open Sans"  sans-serif';
+  color: white;
+}
+
+/* line 13, ../scss/components/_heading.scss */
+h3 {
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 36px;
+  font-family: '"Open Sans"  sans-serif';
+  color: #363636;
+}
+
+/* line 17, ../scss/components/_heading.scss */
+h5 {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  font-family: "Georgia  sans-serif";
+  color: #8a8a8a;
+}
+
+/* line 21, ../scss/components/_heading.scss */
+p {
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 16px;
+  font-family: '"Open Sans"  sans-serif';
+  color: #777777;
+}
+
+/* line 1, ../scss/components/_input.scss */
+input {
+  height: 71px;
+  width: 488px;
+  border: none;
+  background-position: 21px;
+  background-image: url("../../images/sign-in/mail.png");
+  background-repeat: no-repeat;
+  padding-left: 74px;
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+/* line 1, ../scss/widgets/_aside.scss */
+aside {
+  position: fixed;
+  top: 0;
+  right: -190px;
+  width: 190px;
+  height: 100%;
+  background-color: #e4e8ea;
+  text-align: center;
+  -webkit-transition-property: right;
+  -moz-transition-property: right;
+  -o-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 400ms;
+  -moz-transition-duration: 400ms;
+  -o-transition-duration: 400ms;
+  transition-duration: 400ms;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+/* line 14, ../scss/widgets/_aside.scss */
+aside > img {
+  margin: 80px 0 60px;
+}
+/* line 20, ../scss/widgets/_aside.scss */
+aside nav ul li {
+  position: relative;
+}
+/* line 23, ../scss/widgets/_aside.scss */
+aside nav ul li::after {
+  position: absolute;
+  bottom: 0;
+  left: 80px;
+  width: 30px;
+  height: 1px;
+  background: #a4a6a8;
+  content: '';
+}
+/* line 33, ../scss/widgets/_aside.scss */
+aside nav ul li:last-child::after {
+  width: 0;
+  content: '';
+}
+/* line 38, ../scss/widgets/_aside.scss */
+aside nav ul li a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  font-family: '"Open Sans"  sans-serif';
+  color: #757575;
+  line-height: 62px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/* line 44, ../scss/widgets/_aside.scss */
+aside nav ul li a:hover {
+  color: #383838;
+}
+/* line 53, ../scss/widgets/_aside.scss */
+aside .mail {
+  display: inline-block;
+  margin-top: 60px;
+}
+/* line 58, ../scss/widgets/_aside.scss */
+aside .mail a {
+  display: block;
+  width: 55px;
+  height: 55px;
+  margin: auto;
+  border-radius: 50%;
+  background: url("../../images/aside/aside-mail.png") no-repeat center center #3a3a3a;
+}
+/* line 67, ../scss/widgets/_aside.scss */
+aside .mail:hover {
+  background-color: #fff;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+  opacity: 0.3;
+}
+/* line 72, ../scss/widgets/_aside.scss */
+aside.show {
+  right: 0;
+}
+
+/* line 1, ../scss/widgets/_footer.scss */
+footer {
+  border-top: 1px solid #e1e1e1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+/* line 5, ../scss/widgets/_footer.scss */
+footer nav {
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 8, ../scss/widgets/_footer.scss */
+footer nav ul {
+  float: left;
+  font-size: 0;
+}
+/* line 12, ../scss/widgets/_footer.scss */
+footer nav ul li {
+  display: inline-block;
+  margin-right: 25px;
+  line-height: 100px;
+}
+/* line 16, ../scss/widgets/_footer.scss */
+footer nav ul li a {
+  text-transform: capitalize;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 14px;
+  font-family: '"Open Sans"  sans-serif';
+  color: #8a8a8a;
+}
+/* line 21, ../scss/widgets/_footer.scss */
+footer nav ul li a:hover {
+  text-decoration: underline;
+}
+/* line 27, ../scss/widgets/_footer.scss */
+footer nav p {
+  float: right;
+  line-height: 100px;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 14px;
+  font-family: '"Open Sans"  sans-serif';
+  color: #8a8a8a;
+}
+
+/* line 1, ../scss/layouts/_landing.scss */
+.landing {
+  overflow-x: hidden;
+  font-size: 0;
+}
+/* line 1, ../scss/layouts/_launcher.scss */
+.landing .launcher {
+  display: inline-block;
+  width: 100%;
+  height: 875px;
+  background-position: center;
+  background-image: url("../../images/launcher/launcher.jpg");
+  background-repeat: no-repeat;
+  border-bottom: 5px solid #16a085;
+  text-align: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+/* line 18, ../scss/layouts/_launcher.scss */
+.landing .launcher .logo {
+  position: relative;
+  width: 256px;
+  height: 117px;
+  z-index: 1;
+  margin: auto;
+  padding: 120px 0 90px;
+}
+/* line 26, ../scss/layouts/_launcher.scss */
+.landing .launcher .logo::after {
+  position: absolute;
+  top: 120px;
+  right: -5px;
+  z-index: -1;
+  display: block;
+  content: url("../../images/launcher/shadow.png");
+}
+/* line 36, ../scss/layouts/_launcher.scss */
+.landing .launcher .cta-button {
+  margin: 110px;
+}
+/* line 40, ../scss/layouts/_launcher.scss */
+.landing .launcher .button {
+  line-height: 72px;
+}
+/* line 43, ../scss/layouts/_launcher.scss */
+.landing .launcher .button:first-child {
+  margin-right: 30px;
+}
+/* line 1, ../scss/layouts/_review.scss */
+.landing .review-right {
+  margin: 140px 0 210px;
+  padding-left: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+/* line 6, ../scss/layouts/_review.scss */
+.landing .review-right figure {
+  font-size: 0;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 10, ../scss/layouts/_review.scss */
+.landing .review-right figure img {
+  float: right;
+  padding: 0 50px 0 90px;
+}
+/* line 14, ../scss/layouts/_review.scss */
+.landing .review-right figure figcaption {
+  width: 470px;
+  padding-top: 170px;
+  text-align: left;
+}
+/* line 19, ../scss/layouts/_review.scss */
+.landing .review-right figure figcaption h3 {
+  display: inline;
+}
+/* line 22, ../scss/layouts/_review.scss */
+.landing .review-right figure figcaption .application {
+  float: right;
+}
+/* line 24, ../scss/layouts/_review.scss */
+.landing .review-right figure figcaption .application img {
+  float: left;
+  padding: 0 0 0 20px;
+}
+/* line 29, ../scss/layouts/_review.scss */
+.landing .review-right figure figcaption p {
+  padding-top: 15px;
+  text-align: justify;
+}
+/* line 33, ../scss/layouts/_review.scss */
+.landing .review-right figure figcaption a {
+  margin-top: 20px;
+}
+/* line 40, ../scss/layouts/_review.scss */
+.landing .review-left {
+  padding-left: 20px;
+}
+/* line 43, ../scss/layouts/_review.scss */
+.landing .review-left figure {
+  font-size: 0;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 47, ../scss/layouts/_review.scss */
+.landing .review-left figure img {
+  float: left;
+  padding: 0 130px 0 0;
+}
+/* line 51, ../scss/layouts/_review.scss */
+.landing .review-left figure figcaption {
+  padding-top: 170px;
+  width: 470px;
+  float: right;
+  text-align: left;
+}
+/* line 57, ../scss/layouts/_review.scss */
+.landing .review-left figure figcaption p {
+  padding-top: 15px;
+  text-align: justify;
+}
+/* line 62, ../scss/layouts/_review.scss */
+.landing .review-left figure figcaption a {
+  margin-top: 20px;
+}
+/* line 1, ../scss/layouts/_capability.scss */
+.landing .capability {
+  margin: 200px 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+/* line 6, ../scss/layouts/_capability.scss */
+.landing .capability > h3 {
+  font-size: 33px;
+  padding-bottom: 50px;
+}
+/* line 11, ../scss/layouts/_capability.scss */
+.landing .capability .features {
+  padding-left: 20px;
+  font-size: 0;
+}
+/* line 15, ../scss/layouts/_capability.scss */
+.landing .capability .features figure {
+  margin-right: 53px;
+  display: inline-block;
+  width: 240px;
+}
+/* line 20, ../scss/layouts/_capability.scss */
+.landing .capability .features figure img {
+  padding: 13px;
+  border: 1px solid #e1e1e1;
+}
+/* line 26, ../scss/layouts/_capability.scss */
+.landing .capability .features figure figcaption h3 {
+  padding: 40px 0 0;
+  font-size: 24px;
+}
+/* line 30, ../scss/layouts/_capability.scss */
+.landing .capability .features figure figcaption p {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  font-family: "Georgia  sans-serif";
+  color: #8a8a8a;
+  line-height: 24px;
+}
+/* line 36, ../scss/layouts/_capability.scss */
+.landing .capability .features a {
+  margin-top: 20px;
+}
+/* line 1, ../scss/layouts/_sign-in.scss */
+.landing .sign-in {
+  position: relative;
+  width: 100%;
+  border-bottom: 5px solid #16a085;
+  background-color: #2c3e50;
+  font-size: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+/* line 9, ../scss/layouts/_sign-in.scss */
+.landing .sign-in .content-wrapper {
+  z-index: 2;
+}
+/* line 12, ../scss/layouts/_sign-in.scss */
+.landing .sign-in .content-wrapper::after {
+  position: absolute;
+  top: 0;
+  right: -100%;
+  bottom: 0;
+  left: -100%;
+  z-index: -1;
+  border-bottom: 5px solid #16a085;
+  background-color: #2c3e50;
+  content: '';
+  height: 100%;
+}
+/* line 25, ../scss/layouts/_sign-in.scss */
+.landing .sign-in .content-wrapper > h3 {
+  padding-top: 115px;
+  color: #fff;
+}
+/* line 30, ../scss/layouts/_sign-in.scss */
+.landing .sign-in .content-wrapper > p {
+  font-size: 18px;
+  line-height: 42px;
+  color: #fff;
+}
+/* line 36, ../scss/layouts/_sign-in.scss */
+.landing .sign-in .content-wrapper form {
+  margin: 65px 0 100px;
+}
+/* line 39, ../scss/layouts/_sign-in.scss */
+.landing .sign-in .content-wrapper form .button {
+  width: 204px;
+  height: 73px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-right-radius: 5px;
+  border-top-right-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+/* line 1, ../scss/layouts/_comments.scss */
+.landing .comments {
+  margin: 200px 0 140px 0;
+  font-size: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+/* line 7, ../scss/layouts/_comments.scss */
+.landing .comments > h3 {
+  margin-bottom: 55px;
+}
+/* line 13, ../scss/layouts/_comments.scss */
+.landing .comments .figure-wrapper > figure:first-child {
+  margin-left: 0;
+}
+/* line 17, ../scss/layouts/_comments.scss */
+.landing .comments .figure-wrapper figure {
+  margin: 0 0 60px 56px;
+  display: inline-block;
+  width: 420px;
+  height: 335px;
+  border: solid 1px #e1e1e1;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 26, ../scss/layouts/_comments.scss */
+.landing .comments .figure-wrapper figure img {
+  padding: 48px 0 25px;
+}
+/* line 30, ../scss/layouts/_comments.scss */
+.landing .comments .figure-wrapper figure figcaption h3 {
+  font-size: 18px;
+  line-height: 18px;
+}
+/* line 34, ../scss/layouts/_comments.scss */
+.landing .comments .figure-wrapper figure figcaption a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #16a085;
+}
+/* line 39, ../scss/layouts/_comments.scss */
+.landing .comments .figure-wrapper figure figcaption a:hover {
+  text-decoration: underline;
+}
+/* line 43, ../scss/layouts/_comments.scss */
+.landing .comments .figure-wrapper figure figcaption p {
+  padding: 25px 37px 0;
+  line-height: 24px;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  font-family: "Georgia  sans-serif";
+  color: #8a8a8a;
+}
+/* line 1, ../scss/layouts/_introduction.scss */
+.landing .introduction {
+  margin-bottom: 110px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+/* line 5, ../scss/layouts/_introduction.scss */
+.landing .introduction > h3 {
+  font-size: 24px;
+  line-height: 28px;
+}
+/* line 10, ../scss/layouts/_introduction.scss */
+.landing .introduction > p {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  font-family: "Georgia  sans-serif";
+  color: #8a8a8a;
+  line-height: 28px;
+}
+/* line 15, ../scss/layouts/_introduction.scss */
+.landing .introduction .button {
+  line-height: 71px;
+  margin-top: 70px;
+}
