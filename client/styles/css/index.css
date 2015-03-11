@@ -359,6 +359,7 @@ aside nav ul li:last-child::after {
 }
 /* line 38, ../scss/widgets/_aside.scss */
 aside nav ul li a {
+  letter-spacing: 2px;
   line-height: 62px;
   text-transform: uppercase;
   text-decoration: none;
@@ -371,11 +372,11 @@ aside nav ul li a {
   -o-transition-duration: 800ms;
   transition-duration: 800ms;
 }
-/* line 45, ../scss/widgets/_aside.scss */
+/* line 46, ../scss/widgets/_aside.scss */
 aside nav ul li a:hover {
   color: #383838;
 }
-/* line 54, ../scss/widgets/_aside.scss */
+/* line 55, ../scss/widgets/_aside.scss */
 aside .mail {
   display: inline-block;
   margin-top: 60px;
@@ -388,7 +389,7 @@ aside .mail {
   -o-transition-duration: 800ms;
   transition-duration: 800ms;
 }
-/* line 60, ../scss/widgets/_aside.scss */
+/* line 61, ../scss/widgets/_aside.scss */
 aside .mail a {
   display: block;
   width: 55px;
@@ -397,13 +398,13 @@ aside .mail a {
   border-radius: 50%;
   background: url("../../images/aside/aside-mail.png") no-repeat center center #3a3a3a;
 }
-/* line 69, ../scss/widgets/_aside.scss */
+/* line 70, ../scss/widgets/_aside.scss */
 aside .mail:hover {
   background-color: #fff;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
   opacity: 0.3;
 }
-/* line 74, ../scss/widgets/_aside.scss */
+/* line 75, ../scss/widgets/_aside.scss */
 aside.show {
   right: 0;
 }
