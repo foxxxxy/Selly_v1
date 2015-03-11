@@ -1,17 +1,21 @@
-.introduction{
+.introduction {
   margin-bottom: 110px;
   @include user-select(none);
 
   & > h3 {
-     font-size: 24px;
-     line-height: 28px;
-   }
-
-  & > p {
-    @include select-font(italic, normal, 14px, 'Georgia  sans-serif', #8a8a8a);
+    font-size: 24px;
     line-height: 28px;
   }
-  
+
+  & > p {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 14px;
+    font-family: Georgia sans-serif;
+    color: #8a8a8a;
+    line-height: 28px;
+  }
+
   .button {
     line-height: 71px;
     margin-top: 70px;

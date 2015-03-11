@@ -10,6 +10,8 @@
   text-decoration: none;
   color: #fff;
   @include border-radius(5px);
+  @include transition-property(all);
+  @include transition-duration(600ms);
 
   &:hover {
     background-color: #19b596;

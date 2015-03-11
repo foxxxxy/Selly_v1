@@ -36,10 +36,11 @@ aside {
         }
 
         a {
-          @include select-font(normal, normal, 12px, '"Open Sans"  sans-serif', #757575);
           line-height: 62px;
           text-transform: uppercase;
           text-decoration: none;
+          @include transition-property(all);
+          @include transition-duration(800ms);
 
           &:hover {
             color: #383838;
@@ -53,7 +54,8 @@ aside {
   .mail {
     display: inline-block;
     margin-top: 60px;
-
+    @include transition-property(all);
+    @include transition-duration(800ms);
 
     a {
       display: block;

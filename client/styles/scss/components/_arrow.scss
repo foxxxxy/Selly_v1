@@ -5,9 +5,11 @@
   display: inline-block;
   width: 30px;
   height: 30px;
-  @include border-radius(50%);
   background-color: transparent;
   border: 2px solid #16a085;
+  @include border-radius(50%);
+  @include transition-property(all);
+  @include transition-duration(600ms);
 
 
 
@@ -15,6 +17,7 @@
     width: 45px;
     height: 45px;
     border: 2px solid #fff;
+
 
     &::after, &::before {
       background: #fff;
