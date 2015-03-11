@@ -768,7 +768,8 @@ footer nav p {
 }
 /* line 32, ../scss/layouts/_comments.scss */
 .landing .comments .figure-wrapper figure figcaption a {
-  font-weight: bold;
+  font-family: Georgia sans-serif;
+  font-weight: normal;
   line-height: 28px;
   font-size: 14px;
   text-decoration: none;
@@ -782,12 +783,12 @@ footer nav p {
   -o-transition-duration: 800ms;
   transition-duration: 800ms;
 }
-/* line 41, ../scss/layouts/_comments.scss */
+/* line 42, ../scss/layouts/_comments.scss */
 .landing .comments .figure-wrapper figure figcaption a:hover {
   text-decoration: underline;
   color: #000;
 }
-/* line 46, ../scss/layouts/_comments.scss */
+/* line 47, ../scss/layouts/_comments.scss */
 .landing .comments .figure-wrapper figure figcaption p {
   padding: 25px 37px 0;
   line-height: 24px;
