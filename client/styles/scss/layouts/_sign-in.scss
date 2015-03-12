@@ -28,7 +28,7 @@
     }
 
     & > p {
-      font-size: 18px;
+      font-size: 16px;
       line-height: 42px;
       color: #fff;
     }
@@ -36,7 +36,13 @@
     form {
       margin: 65px 0 100px;
 
+        input {
+          vertical-align: middle;
+        }
+
       .button {
+        cursor: pointer;
+        vertical-align: middle;
         width: 204px;
         height: 73px;
         @include border-radius(0);

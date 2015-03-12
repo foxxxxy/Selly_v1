@@ -91,44 +91,24 @@ body .content-wrapper .content .content-block {
   background-color: #fff;
   font-size: 14px;
 }
-/* line 27, ../scss/_base.scss */
-body .push {
-  float: right;
-  width: 0;
-  height: 100%;
-  min-height: 1px;
-  vertical-align: top;
-  -webkit-transition-property: width;
-  -moz-transition-property: width;
-  -o-transition-property: width;
-  transition-property: width;
-  -webkit-transition-duration: 400ms;
-  -moz-transition-duration: 400ms;
-  -o-transition-duration: 400ms;
-  transition-duration: 400ms;
-}
-/* line 36, ../scss/_base.scss */
-body .push.show {
-  width: 190px;
-}
-/* line 41, ../scss/_base.scss */
+/* line 28, ../scss/_base.scss */
 body h1 {
   line-height: 58px;
 }
-/* line 45, ../scss/_base.scss */
+/* line 32, ../scss/_base.scss */
 body h2 {
   line-height: 32px;
 }
-/* line 49, ../scss/_base.scss */
+/* line 36, ../scss/_base.scss */
 body h3 {
   line-height: 42px;
   text-transform: uppercase;
 }
-/* line 54, ../scss/_base.scss */
+/* line 41, ../scss/_base.scss */
 body h5 {
   line-height: 42px;
 }
-/* line 58, ../scss/_base.scss */
+/* line 45, ../scss/_base.scss */
 body p {
   line-height: 28px;
 }
@@ -249,6 +229,13 @@ body p {
   background-color: #141d25;
 }
 
+/* line 2, ../scss/components/_clearfix.scss */
+.clearfix::after {
+  display: table;
+  clear: both;
+  content: '';
+}
+
 /* line 1, ../scss/components/_heading.scss */
 h1 {
   font-size: 48px;
@@ -294,23 +281,6 @@ a {
   color: #757575;
 }
 
-/* line 1, ../scss/components/_input.scss */
-input {
-  height: 71px;
-  width: 488px;
-  border: none;
-  background-position: 21px;
-  background-image: url("../../images/sign-in/mail.png");
-  background-repeat: no-repeat;
-  padding-left: 74px;
-  -moz-border-radius-topleft: 5px;
-  -webkit-border-top-left-radius: 5px;
-  border-top-left-radius: 5px;
-  -moz-border-radius-bottomleft: 5px;
-  -webkit-border-bottom-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
-
 /* line 1, ../scss/widgets/_aside.scss */
 aside {
   position: fixed;
@@ -320,6 +290,7 @@ aside {
   height: 100%;
   background-color: #e4e8ea;
   text-align: center;
+  font-size: 0;
   -webkit-transition-property: right;
   -moz-transition-property: right;
   -o-transition-property: right;
@@ -334,15 +305,15 @@ aside {
   user-select: none;
   cursor: default;
 }
-/* line 14, ../scss/widgets/_aside.scss */
+/* line 15, ../scss/widgets/_aside.scss */
 aside > img {
   margin: 80px 0 60px;
 }
-/* line 20, ../scss/widgets/_aside.scss */
+/* line 21, ../scss/widgets/_aside.scss */
 aside nav ul li {
   position: relative;
 }
-/* line 23, ../scss/widgets/_aside.scss */
+/* line 24, ../scss/widgets/_aside.scss */
 aside nav ul li::after {
   position: absolute;
   bottom: 0;
@@ -352,12 +323,12 @@ aside nav ul li::after {
   background: #a4a6a8;
   content: '';
 }
-/* line 33, ../scss/widgets/_aside.scss */
+/* line 34, ../scss/widgets/_aside.scss */
 aside nav ul li:last-child::after {
   width: 0;
   content: '';
 }
-/* line 38, ../scss/widgets/_aside.scss */
+/* line 39, ../scss/widgets/_aside.scss */
 aside nav ul li a {
   letter-spacing: 2px;
   line-height: 62px;
@@ -372,11 +343,11 @@ aside nav ul li a {
   -o-transition-duration: 800ms;
   transition-duration: 800ms;
 }
-/* line 46, ../scss/widgets/_aside.scss */
+/* line 47, ../scss/widgets/_aside.scss */
 aside nav ul li a:hover {
   color: #383838;
 }
-/* line 55, ../scss/widgets/_aside.scss */
+/* line 56, ../scss/widgets/_aside.scss */
 aside .mail {
   display: inline-block;
   margin-top: 60px;
@@ -389,7 +360,7 @@ aside .mail {
   -o-transition-duration: 800ms;
   transition-duration: 800ms;
 }
-/* line 61, ../scss/widgets/_aside.scss */
+/* line 62, ../scss/widgets/_aside.scss */
 aside .mail a {
   display: block;
   width: 55px;
@@ -398,13 +369,13 @@ aside .mail a {
   border-radius: 50%;
   background: url("../../images/aside/aside-mail.png") no-repeat center center #3a3a3a;
 }
-/* line 70, ../scss/widgets/_aside.scss */
+/* line 71, ../scss/widgets/_aside.scss */
 aside .mail:hover {
   background-color: #fff;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
   opacity: 0.3;
 }
-/* line 75, ../scss/widgets/_aside.scss */
+/* line 76, ../scss/widgets/_aside.scss */
 aside.show {
   right: 0;
 }
@@ -418,28 +389,23 @@ footer {
   user-select: none;
   cursor: default;
 }
-/* line 5, ../scss/widgets/_footer.scss */
-footer nav {
-  overflow: hidden;
-  *zoom: 1;
-}
-/* line 8, ../scss/widgets/_footer.scss */
+/* line 6, ../scss/widgets/_footer.scss */
 footer nav ul {
   float: left;
   font-size: 0;
 }
-/* line 12, ../scss/widgets/_footer.scss */
+/* line 10, ../scss/widgets/_footer.scss */
 footer nav ul li {
   display: inline-block;
   margin-right: 25px;
   line-height: 100px;
 }
-/* line 16, ../scss/widgets/_footer.scss */
+/* line 15, ../scss/widgets/_footer.scss */
 footer nav ul li a {
-  text-transform: capitalize;
-  text-decoration: none;
   font-weight: lighter;
   font-size: 14px;
+  text-transform: capitalize;
+  text-decoration: none;
   color: #8a8a8a;
   -webkit-transition-property: all;
   -moz-transition-property: all;
@@ -450,18 +416,47 @@ footer nav ul li a {
   -o-transition-duration: 800ms;
   transition-duration: 800ms;
 }
-/* line 25, ../scss/widgets/_footer.scss */
+/* line 24, ../scss/widgets/_footer.scss */
 footer nav ul li a:hover {
   text-decoration: underline;
   color: #000;
 }
-/* line 32, ../scss/widgets/_footer.scss */
+/* line 31, ../scss/widgets/_footer.scss */
 footer nav p {
-  font-family: "Open Sans",  sans-serif;
   float: right;
-  line-height: 100px;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
+  line-height: 100px;
   color: #8a8a8a;
+}
+
+/* line 1, ../scss/widgets/_input.scss */
+.input-image {
+  display: inline-block;
+  width: 488px;
+  background-color: #fff;
+  background-position: 21px;
+  background-image: url("../../images/sign-in/mail.png");
+  background-repeat: no-repeat;
+  font-size: 0;
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+/* line 15, ../scss/widgets/_input.scss */
+.input-image input[type="email"] {
+  width: 414px;
+  height: 71px;
+  margin-left: 74px;
+  border: none;
+  vertical-align: middle;
+}
+/* line 22, ../scss/widgets/_input.scss */
+.input-image input[type="email"]:focus {
+  outline: none;
 }
 
 /* line 1, ../scss/layouts/_landing.scss */
@@ -536,16 +531,15 @@ footer nav p {
 /* line 7, ../scss/layouts/_review.scss */
 .landing .review-right figure {
   font-size: 0;
-  overflow: hidden;
-  *zoom: 1;
 }
-/* line 11, ../scss/layouts/_review.scss */
+/* line 10, ../scss/layouts/_review.scss */
 .landing .review-right figure img {
   float: right;
-  padding-left: 90px;
+  padding: 0 50px 0 90px;
 }
-/* line 16, ../scss/layouts/_review.scss */
+/* line 15, ../scss/layouts/_review.scss */
 .landing .review-right figure figcaption {
+  float: left;
   width: 470px;
   padding-top: 170px;
   text-align: left;
@@ -588,12 +582,15 @@ footer nav p {
 /* line 51, ../scss/layouts/_review.scss */
 .landing .review-left {
   padding-left: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  cursor: default;
 }
-/* line 54, ../scss/layouts/_review.scss */
+/* line 55, ../scss/layouts/_review.scss */
 .landing .review-left figure {
   font-size: 0;
-  overflow: hidden;
-  *zoom: 1;
 }
 /* line 58, ../scss/layouts/_review.scss */
 .landing .review-left figure img {
@@ -602,7 +599,7 @@ footer nav p {
 }
 /* line 62, ../scss/layouts/_review.scss */
 .landing .review-left figure figcaption {
-  padding-top: 170px;
+  padding: 170px 10px 0 0;
   width: 470px;
   float: right;
   text-align: left;
@@ -636,14 +633,14 @@ footer nav p {
   font-size: 0;
 }
 /* line 14, ../scss/layouts/_capability.scss */
-.landing .capability .features .last {
-  margin: 0;
-}
-/* line 18, ../scss/layouts/_capability.scss */
 .landing .capability .features figure {
-  margin-right: 70px;
+  margin-left: 70px;
   display: inline-block;
   width: 240px;
+}
+/* line 19, ../scss/layouts/_capability.scss */
+.landing .capability .features figure:first-child {
+  margin: 0;
 }
 /* line 23, ../scss/layouts/_capability.scss */
 .landing .capability .features figure img {
@@ -706,7 +703,7 @@ footer nav p {
 }
 /* line 30, ../scss/layouts/_sign-in.scss */
 .landing .sign-in .content-wrapper > p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 42px;
   color: #fff;
 }
@@ -715,7 +712,13 @@ footer nav p {
   margin: 65px 0 100px;
 }
 /* line 39, ../scss/layouts/_sign-in.scss */
+.landing .sign-in .content-wrapper form input {
+  vertical-align: middle;
+}
+/* line 43, ../scss/layouts/_sign-in.scss */
 .landing .sign-in .content-wrapper form .button {
+  cursor: pointer;
+  vertical-align: middle;
   width: 204px;
   height: 73px;
   -webkit-border-radius: 0;
@@ -755,19 +758,21 @@ footer nav p {
   width: 420px;
   height: 335px;
   border: solid 1px #e1e1e1;
-  overflow: hidden;
-  *zoom: 1;
 }
-/* line 24, ../scss/layouts/_comments.scss */
+/* line 23, ../scss/layouts/_comments.scss */
 .landing .comments .figure-wrapper figure img {
   padding: 48px 0 25px;
 }
-/* line 28, ../scss/layouts/_comments.scss */
+/* line 26, ../scss/layouts/_comments.scss */
+.landing .comments .figure-wrapper figure figcaption {
+  padding: 0 37px;
+}
+/* line 29, ../scss/layouts/_comments.scss */
 .landing .comments .figure-wrapper figure figcaption h3 {
   font-size: 18px;
   line-height: 18px;
 }
-/* line 32, ../scss/layouts/_comments.scss */
+/* line 33, ../scss/layouts/_comments.scss */
 .landing .comments .figure-wrapper figure figcaption a {
   font-family: Georgia sans-serif;
   font-weight: normal;
@@ -784,14 +789,14 @@ footer nav p {
   -o-transition-duration: 800ms;
   transition-duration: 800ms;
 }
-/* line 42, ../scss/layouts/_comments.scss */
+/* line 43, ../scss/layouts/_comments.scss */
 .landing .comments .figure-wrapper figure figcaption a:hover {
   text-decoration: underline;
   color: #000;
 }
-/* line 47, ../scss/layouts/_comments.scss */
+/* line 48, ../scss/layouts/_comments.scss */
 .landing .comments .figure-wrapper figure figcaption p {
-  padding: 25px 37px 0;
+  padding-top: 20px;
   line-height: 24px;
   font-style: italic;
   font-weight: normal;
@@ -826,4 +831,24 @@ footer nav p {
 .landing .introduction .button {
   line-height: 71px;
   margin-top: 70px;
+}
+/* line 17, ../scss/layouts/_landing.scss */
+.landing .push {
+  float: right;
+  width: 0;
+  height: 100%;
+  min-height: 1px;
+  vertical-align: top;
+  -webkit-transition-property: width;
+  -moz-transition-property: width;
+  -o-transition-property: width;
+  transition-property: width;
+  -webkit-transition-duration: 400ms;
+  -moz-transition-duration: 400ms;
+  -o-transition-duration: 400ms;
+  transition-duration: 400ms;
+}
+/* line 26, ../scss/layouts/_landing.scss */
+.landing .push.show {
+  width: 190px;
 }

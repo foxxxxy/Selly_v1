@@ -3,8 +3,6 @@ footer {
   @include user-select(none);
 
   nav {
-    @include clearfix;
-
     ul {
       float: left;
       font-size: 0;
@@ -13,11 +11,12 @@ footer {
         display: inline-block;
         margin-right: 25px;
         line-height: 100px;
+
         a {
-          text-transform: capitalize;
-          text-decoration: none;
           font-weight: lighter;
           font-size: 14px;
+          text-transform: capitalize;
+          text-decoration: none;
           color: #8a8a8a;
           @include transition-property(all);
           @include transition-duration(800ms);
@@ -30,10 +29,10 @@ footer {
       }
     }
     p {
-      font-family: "Open Sans",  sans-serif;
       float: right;
-      line-height: 100px;
+      font-family: "Open Sans", sans-serif;
       font-size: 14px;
+      line-height: 100px;
       color: #8a8a8a;
     }
   }

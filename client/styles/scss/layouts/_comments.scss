@@ -19,12 +19,13 @@
       width: 420px;
       height: 335px;
       border: solid 1px #e1e1e1;
-      @include clearfix;
 
       img {
         padding: 48px 0 25px;
       }
       figcaption {
+        padding: 0 37px;
+
         h3 {
           font-size: 18px;
           line-height: 18px;
@@ -45,7 +46,7 @@
           }
         }
         p {
-          padding: 25px 37px 0;
+          padding-top: 20px;
           line-height: 24px;
           font-style: italic;
           font-weight: normal;

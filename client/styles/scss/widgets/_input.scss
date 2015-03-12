@@ -1,0 +1,26 @@
+.input-image {
+  display: inline-block;
+  width: 488px;
+  background-color: #fff;
+  background: {
+    position: 21px;
+    image: url("../../images/sign-in/mail.png");
+    repeat: no-repeat;
+  }
+;
+  font-size: 0;
+  @include border-top-left-radius(5px);
+  @include border-bottom-left-radius(5px);
+
+  input[type="email"] {
+    width: 414px;
+    height: 71px;
+    margin-left: 74px;
+    border: none;
+    vertical-align: middle;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

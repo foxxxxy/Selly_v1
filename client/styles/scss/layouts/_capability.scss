@@ -11,14 +11,14 @@
     padding-left: 20px;
     font-size: 0;
 
-    .last {
-      margin: 0;
-    }
-
     figure {
-      margin-right: 70px;
+      margin-left: 70px;
       display: inline-block;
       width: 240px;
+
+      &:first-child{
+        margin: 0;
+      }
 
       img {
         padding: 13px;
