@@ -1,23 +1,20 @@
 .arrow {
   position: relative;
   z-index: 1;
-  margin: 0 auto;
   display: inline-block;
   width: 30px;
   height: 30px;
-  background-color: transparent;
+  margin: 0 auto;
   border: 2px solid #16a085;
+  background-color: transparent;
   @include border-radius(50%);
   @include transition-property(all);
   @include transition-duration(600ms);
-
-
 
   &.launch {
     width: 45px;
     height: 45px;
     border: 2px solid #fff;
-
 
     &::after, &::before {
       background: #fff;
@@ -35,11 +32,11 @@
     bottom: 0;
     left: -15%;
     z-index: -1;
-    margin: auto;
-    content: "";
     width: 33%;
     height: 8%;
+    margin: auto;
     background: #16a085;
+    content: "";
     @include border-radius(5px);
     @include rotate(45deg);
   }

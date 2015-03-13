@@ -2,9 +2,9 @@
   display: inline-block;
   width: 230px;
   height: 72px;
-  background-color: #16a085;
   border: solid 3px transparent;
   border-bottom-color: #3bd4b6;
+  background-color: #16a085;
   font: 16px "Open Sans", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
@@ -18,8 +18,8 @@
   }
 
   &.video {
-    background-color: rgba(0, 0, 0, .5);
     border: solid 2px #fff;
+    background-color: rgba(0, 0, 0, .5);
 
     &:hover {
       background-color: #141d25;

@@ -5,12 +5,11 @@ aside {
   width: 190px;
   height: 100%;
   background-color: #e4e8ea;
-  text-align: center;
   font-size: 0;
+  text-align: center;
   @include transition-property(right);
   @include transition-duration(400ms);
   @include user-select(none);
-
 
   & > img {
     margin: 80px 0 60px;
@@ -37,10 +36,10 @@ aside {
         }
 
         a {
-          letter-spacing: 2px;
           line-height: 62px;
           text-transform: uppercase;
           text-decoration: none;
+          letter-spacing: 2px;
           @include transition-property(all);
           @include transition-duration(800ms);
 
@@ -68,7 +67,7 @@ aside {
       background: url("../../images/aside/aside-mail.png") no-repeat center center #3a3a3a;
     }
 
-    &:hover{
+    &:hover {
       background-color: #fff;
       @include opacity(0.3);
     }

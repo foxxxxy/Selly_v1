@@ -14,10 +14,10 @@
     }
 
     figure {
-      margin: 0 0 60px 56px;
       display: inline-block;
       width: 420px;
       height: 335px;
+      margin: 0 0 60px 56px;
       border: solid 1px #e1e1e1;
 
       img {
@@ -33,8 +33,8 @@
         a {
           font-family: Georgia sans-serif;
           font-weight: normal;
-          line-height: 28px;
           font-size: 14px;
+          line-height: 28px;
           text-decoration: none;
           color: #16a085;
           @include transition-property(all);
@@ -47,11 +47,11 @@
         }
         p {
           padding-top: 20px;
-          line-height: 24px;
           font-style: italic;
           font-weight: normal;
           font-size: 14px;
           font-family: Georgia sans-serif;
+          line-height: 24px;
           color: #8a8a8a;
         }
       }

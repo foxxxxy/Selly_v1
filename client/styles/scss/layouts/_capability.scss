@@ -3,8 +3,8 @@
   @include user-select(none);
 
   & > h3 {
-    font-size: 35px;
     padding-bottom: 50px;
+    font-size: 35px;
   }
 
   .features {
@@ -12,11 +12,11 @@
     font-size: 0;
 
     figure {
-      margin-left: 70px;
       display: inline-block;
       width: 240px;
+      margin-left: 70px;
 
-      &:first-child{
+      &:first-child {
         margin: 0;
       }
 
@@ -36,8 +36,8 @@
           font-weight: normal;
           font-size: 14px;
           font-family: Georgia sans-serif;
-          color: #8a8a8a;
           line-height: 24px;
+          color: #8a8a8a;
         }
       }
     }
